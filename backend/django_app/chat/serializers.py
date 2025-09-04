@@ -19,6 +19,8 @@ class RoomSerializer(serializers.ModelSerializer):
         fields = ["id", "name", "is_private", "participants", "created_at"]
 
 
+
+
 class MessageSerializer(serializers.ModelSerializer):
     sender = UserMiniSerializer(read_only=True)
     class Meta:
